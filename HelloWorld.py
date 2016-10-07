@@ -17,14 +17,14 @@ to do stuff and things.
 '''
 def learnPython():
 	#This is just a single line comment
-	#print("Running hello world program")
+	print("Running hello world program")
 	x = 0
-	if(1){
-
-	}elif(0){
-
-	}else{
-
-	}
+	if(x == 1):
+		print("Something went wrong...")
+	elif(x == 0):
+		print(s)
+	else:
+		return
+	return
 
 learnPython() #this tells the program to run learnPython function
