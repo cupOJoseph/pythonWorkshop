@@ -43,7 +43,7 @@ def AutoCheckPhone(text):
 Previous function did not use regular expressions and was 9 lines of code.
 This one will.
 '''
-def AutoCheckWithRE(text): #requires >import re 
+def AutoCheckWithRE(text): #requires >import re
 	phoneRegex = re.compile(r'\d\d\d-\d\d\d-d\d\d\d')
 	mo = phoneRegex.search(text)
 	print("Phone Number found:", mo.group())
@@ -52,5 +52,10 @@ def AutoCheckWithRE(text): #requires >import re
 #outside the function
 myText = "My phone number is 617-981-3630, some other numbers are 999, and 444"
 AutoCheckWithRE()
-#How could something like be useful in other applications?
-#it was really easy to get that data out of a string of any length.
+
+'''
+How could something like be useful in other
+applications? Besides forms?
+it was really easy to get that data out of a
+string of any length.
+'''

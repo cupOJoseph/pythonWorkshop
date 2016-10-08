@@ -17,7 +17,7 @@ If you would like some more reading material to help walk you through this mater
 - "Hello World" program
   - print function, use # to make comments
   - step by 2 = s[::2] => Hlowrd
-  - splice = s[0:5] => Hello 
+  - splice = s[0:5] => Hello
 - Simple program
   - Take 10 numbers from the user
   - Use a for loop
@@ -28,13 +28,11 @@ If you would like some more reading material to help walk you through this mater
   - create dictionary
   - take data from user
   - print values
-  
+
  ##Part 2: Automation
 - learn about imports
   - Import libraries
+- Example Excel file from https://www.mockaroo.com/
 - Mess with a huge CSV file
 - Get useful data from a huge CSV file
 - Design our own program to play with the CSV file.
-
- 
-  
