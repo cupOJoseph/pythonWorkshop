@@ -24,7 +24,7 @@ def learnPython():
 	elif(x == 0):
 		print(s)
 	else:
-		return
+		#NOTHING
 	return
 
 learnPython() #this tells the program to run learnPython function
