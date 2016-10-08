@@ -28,3 +28,7 @@ def learnPython():
 	return
 
 learnPython() #this tells the program to run learnPython function
+'''
+run on UNix with $python HelloWorld.py
+run on windows with $C:\Python34>Python HelloWorld.py
+'''
