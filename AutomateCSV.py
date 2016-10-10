@@ -13,9 +13,9 @@ def mashXLSX():
 	sheets = wbook.get_sheet_names()#work books are broken into sheets
 	print("Sheets:", sheets)
 
-	#data = wbook.get_sheet_by_name('WHAT IS THIS?')
+	data = wbook.get_sheet_by_name('data')
 
-	# find all people who's name starts with J account balance
+	# find all people who's name starts with Joseph account balance
 
 	#write this to a new file
 

@@ -3,9 +3,12 @@ Create a hello world program.
 Manipute a string a little bit.
 Notice that this is a comment, it doesn't effect the code.
 I can comment here because of the three ' s
+This is a comment.
 '''
 
 s = "Hello World"
+num = -1
+empty_s = ""
 
 '''
 This is a comment that tells us about the following function.
@@ -16,18 +19,25 @@ to do stuff and things.
 @return - None
 '''
 def learnPython():
-	#This is just a single line comment
-	print("Running hello world program")
+	# This is just a single line comment
+	print("Running hello world program", num)#anything after a # is a comment
 	x = 0
+
 	if(x == 1):
 		print("Something went wrong...")
-	elif(x == 0):
+		print('value of x:', x)
+	elif(x == 0):#else if()
 		print(s)
 	else:
 		#NOTHING
-	return
+		return
 
-learnPython() #this tells the program to run learnPython function
+def CrazyStrings():
+	print(s[::2])
+	print(s[0:5])
+
+CrazyStrings()
+#learnPython() #this tells the program to run learnPython function
 '''
 run on UNix with $python HelloWorld.py
 run on windows with $C:\Python34>Python HelloWorld.py

@@ -17,7 +17,7 @@ For further reading about automation check out http://findit.library.gwu.edu/ite
 def AutoCheckPhone(text):
 	#Check if the input of text belongs to a phone number
 	#Examples:
-	#617 981 3630
+	#6179813630
 	#617-981-3630
 	#617-981 3630
 	#617 981-3630
@@ -28,13 +28,14 @@ def AutoCheckPhone(text):
 	text.replace(")","")
 
 	text.replace("-","")
+	text.replace(" ","")
 
 	if(len(text) != 10):
 		return False
 
 	for i in range(10):
 		if not text[i].isdecimal():
-			return True
+			return False
 
 	return True #did not use regular expressions
 
@@ -44,14 +45,14 @@ Previous function did not use regular expressions and was 9 lines of code.
 This one will.
 '''
 def AutoCheckWithRE(text): #requires >import re
-	phoneRegex = re.compile(r'\d\d\d-\d\d\d-d\d\d\d')
+	phoneRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 	mo = phoneRegex.search(text)
 	print("Phone Number found:", mo.group())
 	#2 lines of code. Takes any string and looks for a ###-###-####
 
 #outside the function
 myText = "My phone number is 617-981-3630, some other numbers are 999, and 444"
-AutoCheckWithRE()
+AutoCheckWithRE(myText)
 
 '''
 How could something like be useful in other

@@ -19,7 +19,12 @@ movie2['Year'] = '1997'
 #create an if-elif-else statement to decide & print which movie came out first or if they
 # came out the same year
 
-#YOUR CODE HERE
+if(movie1['Year'] > movie2['Year']):
+	print("Movie 2 came first")
+elif(movie1['Year'] < movie2['Year']):
+	print("Movie 1 came first")
+else:
+	print("They came out at the same time!")
 
 
 # we can even print the whole dictionary
