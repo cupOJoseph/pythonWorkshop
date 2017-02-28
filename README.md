@@ -29,7 +29,7 @@ If you would like some more reading material to help walk you through this mater
   - take data from user
   - print values
 
- ##Part 2: Automation
+##Part 2: Automation
 - learn about imports
   - Import libraries
 - Example Excel file from https://www.mockaroo.com/

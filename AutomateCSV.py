@@ -1,5 +1,7 @@
 import re
 import openpyxl
+# run >pip3 install openpyxl
+#python install package (3) openpyxl
 
 '''
 Let's mash up some CSV and Excel files
@@ -16,10 +18,19 @@ def mashXLSX():
 	data = wbook.get_sheet_by_name('data')
 
 	# find all people who's name starts with Joseph account balance
+	for row in range(2, 1000):
+		name = data['B' + str(row)].value
+
+		print(name)
+
+		if(name == "Joseph"):
+			cash = data['F' + str(row)].value
+			print("Joseph has ", cash)
+
 
 	#write this to a new file
 
-	#do this instead of CMD+F and then copy pasting all the infomation
+
 mashXLSX()
 
 '''
@@ -29,4 +40,5 @@ https://openpyxl.readthedocs.io/en/default/
 How long would it take you to manually do this?
 How long would it take to do it with built in Excel functions?
 	- probably not too long, but this can easily changed for other purposes too!
+	- Combine with web APIs, for example sent a payment to certain bitcoin addresses in our file.
 '''

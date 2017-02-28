@@ -19,13 +19,8 @@ movie2['Year'] = '1997'
 #create an if-elif-else statement to decide & print which movie came out first or if they
 # came out the same year
 
-if(movie1['Year'] > movie2['Year']):
-	print("Movie 2 came first")
-elif(movie1['Year'] < movie2['Year']):
-	print("Movie 1 came first")
-else:
-	print("They came out at the same time!")
 
+# YOUR CODE HERE
 
 # we can even print the whole dictionary
 #python is really helpful
@@ -35,4 +30,12 @@ print("movie 1: ", movie1)
 
 '''
 That's pretty much it. Dictionaries are easy to use and extremely powerful.
+
+What other type of basic data structures are there?!
+
+- Lists [] - Can add any type of variable to the list, get items from an index of the list, single item per spot.
+- Tuples () - Just like a list, but it can't be changed.  This is called being immutable.
+
+Make your own too!
+
 '''

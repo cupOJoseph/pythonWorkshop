@@ -20,7 +20,7 @@ to do stuff and things.
 '''
 def learnPython():
 	# This is just a single line comment
-	print("Running hello world program", num)#anything after a # is a comment
+	print("Running hello world program. num = ", num)#anything after a # is a comment
 	x = 0
 
 	if(x == 1):
@@ -36,8 +36,10 @@ def CrazyStrings():
 	print(s[::2])
 	print(s[0:5])
 
-CrazyStrings()
-#learnPython() #this tells the program to run learnPython function
+
+# Now I'm outside the defined functions. Execute the next instruction.
+#CrazyStrings()
+learnPython() #this tells the program to run learnPython function
 '''
 run on UNix with $python HelloWorld.py
 run on windows with $C:\Python34>Python HelloWorld.py
